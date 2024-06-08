@@ -1,9 +1,10 @@
 <p align="center">Laravel Email Sending Setup</p>
 This guide will walk you through configuring email sending in your Laravel project using Gmail's SMTP server.
+
 ## Prerequisites
--A Google account with access to Gmail
--A Laravel project set up on your local machine
--Composer installed
+i) A Google account with access to Gmail
+ii) A Laravel project set up on your local machine
+iii) Composer installed
 
 ## Step 1: Configure Google Account for App Password
 1. Go to your Google Account.
@@ -13,7 +14,7 @@ This guide will walk you through configuring email sending in your Laravel proje
 
 ## Step 2: Create a New Laravel Project
 If you haven't created a Laravel project yet, you can create one using the following command:
-# composer create-project laravel/laravel:^10.0 emailsending-app
+composer create-project laravel/laravel:^10.0 emailsending-app
 
 ## Step 3: Configure .env File for Email
 Open your '.env' file and update the following lines with your Gmail and app password details:
@@ -91,7 +92,6 @@ class SendMailController extends Controller
     }
 }
 Replace receiver@example.com with the email address of the recipient.
-
 ## Step 7: Define a Route
 Open routes/web.php and add the following route:
 use App\Http\Controllers\SendMailController;
