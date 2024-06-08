@@ -1,4 +1,4 @@
-<p align="center">Laravel Email Sending Setup</p>
+<p align="center"><b>Laravel Email Sending Setup</b></p>
 This guide will walk you through configuring email sending in your Laravel project using Gmail's SMTP server.
 
 ## Prerequisites
@@ -55,20 +55,11 @@ class SendMail extends Mailable
 
 ## Step 5: Create Email View
 Create a new directory named email inside resources/views, and then create a file named sendEmail.blade.php inside the email directory with the following content:
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Notification</title>
-</head>
-<body>
-    <h1>{{ $mailData['title'] }}</h1>
-    <p>{{ $mailData['body'] }}</p>
-    <p>Thanks,</p>
-    <p>Your Company Name</p>
-</body>
-</html>
+
+  //  <h1>{{ $mailData['title'] }}</h1>
+  //  <p>{{ $mailData['body'] }}</p>
+  //  <p>Thanks,</p>
+ // <p>Your Company Name</p>
 
 ## Step 6: Create a Controller
 Run the following command to create a controller:
